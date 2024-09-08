@@ -8,4 +8,5 @@ ARG PUBLIC_URL
 ARG PORT
 CMD ["npm", "start"]
 # Instala eslint globalmente
-RUN npm install -g eslint
+RUN npm uninstall eslint
+RUN npm install -g eslint@5.52.0
